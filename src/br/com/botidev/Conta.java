@@ -19,4 +19,8 @@ public class Conta {
 		System.out.println(saldo);
 	}
 	
+	public void depositar() {
+		saldo += deposito;
+	}
+	
 }
