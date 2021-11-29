@@ -6,7 +6,9 @@ public class TesteCliente {
 		
 		Conta contaCorrente = new Conta(111,850.50,333);
 		
-		contaCorrente.c.nome = "Renato";
+		 contaCorrente.c.nome = "Renato";
+		 
+		 System.out.println(contaCorrente.consultaSaldo());
 		
 		
 		

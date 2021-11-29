@@ -23,4 +23,7 @@ public class Conta {
 	public void retirar(double valor) {
 		this.saldo -= valor;
 	}
+	public double consultaSaldo() {
+		return saldo;
+	}
 }
