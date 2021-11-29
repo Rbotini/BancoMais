@@ -1,5 +1,10 @@
 package br.com.botidev;
 
+/**
+ * Classe que Abstrai uma Conta Bancaria
+ * @author renato.botini
+ * @version 1.0
+ */
 public class Conta {
 	
 	public int numero;
@@ -8,6 +13,8 @@ public class Conta {
 	
 	
      Cliente c = new Cliente();
+     
+    //Construtor de Classe
 	public Conta (int numero, double saldo,int agencia)	{
 		
 		this.numero = numero;
@@ -15,19 +22,30 @@ public class Conta {
 		this.agencia = agencia;
 		
 	}
-	// Metodo depositar recebendo valor
+	
+	/**
+	 * Adciona um valor ao saldo da conta
+	 * @param valor que esta sendo depositado
+	 */
 	public void depositar(double valor) {
 		this.saldo += valor;
 		System.out.println("foi depositado em sua conta:"+valor);
 	}
 	 
-	// Metodo retirar recebendo valor
+	/**
+	 * Retira um valor do saldo da conta
+	 * @param valor que esta sendo retirado
+	 */
+	
 	public void retirar(double valor) {
 		this.saldo -= valor;
 		System.out.println("foi retirado em sua conta:"+valor);
 	}
 	
-	//Metodo que Consulta o saldo
+	/**
+	 * Verifica o Saldo da Conta
+	 * @return Valor do Saldo da Conta
+	 */
 	public double consultaSaldo() {
 		return saldo;
 	}
