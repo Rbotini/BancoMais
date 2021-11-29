@@ -15,16 +15,19 @@ public class Conta {
 		this.agencia = agencia;
 		
 	}
-	
+	// Metodo depositar recebendo valor
 	public void depositar(double valor) {
 		this.saldo += valor;
 		System.out.println("foi depositado em sua conta:"+valor);
 	}
-	
+	 
+	// Metodo retirar recebendo valor
 	public void retirar(double valor) {
 		this.saldo -= valor;
 		System.out.println("foi retirado em sua conta:"+valor);
 	}
+	
+	//Metodo que Consulta o saldo
 	public double consultaSaldo() {
 		return saldo;
 	}
