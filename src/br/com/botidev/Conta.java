@@ -20,4 +20,7 @@ public class Conta {
 		this.saldo += valor;
 	}
 	
+	public void retirar(double valor) {
+		this.saldo -= valor;
+	}
 }
