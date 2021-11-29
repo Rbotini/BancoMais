@@ -23,4 +23,8 @@ public class Conta {
 		saldo += deposito;
 	}
 	
+	public void sacarDinheiro() {
+		saldo -= sacar;
+	}
+	
 }
